@@ -2,9 +2,16 @@ import { Component } from "react";
 import Link from "next/link";
 import Header from "../components/header";
 
-class AboutPage extends Component {
+interface Props {
+  isServer: boolean;
+}
+
+interface State {}
+
+class AboutPage extends Component<Props, State> {
   static getInitialProps() {
     const isServer = typeof window === "undefined";
+    // const test: string = { ss: 'ss' };
     return { isServer };
   }
 
