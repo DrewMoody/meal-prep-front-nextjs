@@ -9793,7 +9793,7 @@ _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(f
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!*************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Ffetch-ex&absolutePagePath=%2FUsers%2Fdrewmoody%2FPersonal_Projects%2Fnextjs%2Fpages%2Ffetch-ex.tsx ***!
   \*************************************************************************************************************************************************/
@@ -9816,5 +9816,5 @@ module.exports = dll_1aef2d0bbc0d334d831c;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=fetch-ex.js.map

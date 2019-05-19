@@ -14,14 +14,6 @@
     "/fetch-ex": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
-    ],
-    "/fetch-post": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/post": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
     ]
   }
 }

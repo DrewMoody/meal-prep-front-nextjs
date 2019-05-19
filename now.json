@@ -1,1 +1,8 @@
-{"version":2,"name":"nextjs","builds":[{"src":"package.json","use":"@now/next"}]}
+{
+  "version": 2,
+  "name": "nextjs",
+  "builds": [{ "src": "package.json", "use": "@now/next" }],
+  "routes": [
+    { "src": "/fetch-post/(?<id>[^/]+)$", "dest": "/fetch-post?id=$id" }
+  ]
+}
