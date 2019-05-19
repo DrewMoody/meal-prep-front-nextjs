@@ -1,9 +1,7 @@
-function Header(): JSX.Element {
-  return (
-    <header>
-      <h1>Next.js Example on Now 2.0</h1>
-    </header>
-  );
-}
+const Header = (): JSX.Element => (
+  <header>
+    <h1>Next.js Example on Now 2.0</h1>
+  </header>
+);
 
 export default Header;

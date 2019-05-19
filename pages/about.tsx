@@ -1,39 +1,52 @@
-import { Component } from "react";
-import Link from "next/link";
-import Header from "../components/header";
+import withLayout from '../components/layout';
 
-interface Props {
-  isServer: boolean;
+function About() {
+  return (
+    <div>
+      <p>This is the about page</p>;
+    </div>
+  );
 }
 
-interface State {}
+export default withLayout(About);
 
-class AboutPage extends Component<Props, State> {
-  static getInitialProps() {
-    const isServer = typeof window === "undefined";
-    // const test: string = { ss: 'ss' };
-    return { isServer };
-  }
+/** PRESERVING FOR TS EXAMPLE, but with hooks this may not be used at all */
+// import { Component } from "react";
+// import Link from "next/link";
+// import Header from "../components/header";
 
-  render() {
-    return (
-      <main>
-        <Header />
-        <section>
-          <p>
-            This is another page of the SSR example, you accessed it{" "}
-            <strong>{this.props.isServer ? "server" : "client"} side</strong>.
-          </p>
-          <p>
-            You can reload to see how the page change.
-          </p>
-          <Link href="/">
-            <a>Go to Home</a>
-          </Link>
-        </section>
-      </main>
-    );
-  }
-}
+// interface Props {
+//   isServer: boolean;
+// }
 
-export default AboutPage;
+// interface State {}
+
+// class AboutPage extends Component<Props, State> {
+//   static getInitialProps() {
+//     const isServer = typeof window === "undefined";
+//     // const test: string = { ss: 'ss' };
+//     return { isServer };
+//   }
+
+//   render() {
+//     return (
+//       <main>
+//         <Header />
+//         <section>
+//           <p>
+//             This is another page of the SSR example, you accessed it{" "}
+//             <strong>{this.props.isServer ? "server" : "client"} side</strong>.
+//           </p>
+//           <p>
+//             You can reload to see how the page change.
+//           </p>
+//           <Link href="/">
+//             <a>Go to Home</a>
+//           </Link>
+//         </section>
+//       </main>
+//     );
+//   }
+// }
+
+// export default AboutPage;
